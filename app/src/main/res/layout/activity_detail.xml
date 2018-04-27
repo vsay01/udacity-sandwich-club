@@ -43,7 +43,7 @@
             android:layout_marginStart="@dimen/text_margin"
             android:layout_marginTop="@dimen/text_margin_top"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_also_known_as_label"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
             app:layout_constraintTop_toBottomOf="@+id/image_iv"
             tools:text="Also known as value" />
 
@@ -69,7 +69,7 @@
             android:layout_marginStart="@dimen/text_margin"
             android:layout_marginTop="@dimen/text_margin_top"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_also_known_as_label"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
             app:layout_constraintTop_toBottomOf="@+id/tv_also_known_as_value"
             tools:text="Place origin" />
 
@@ -95,7 +95,7 @@
             android:layout_marginStart="@dimen/text_margin"
             android:layout_marginTop="@dimen/text_margin_top"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_also_known_as_label"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
             app:layout_constraintTop_toBottomOf="@+id/tv_place_origin_value"
             tools:text="Ingredients" />
 
@@ -122,9 +122,16 @@
             android:layout_marginTop="@dimen/text_margin_top"
             android:paddingBottom="@dimen/activity_horizontal_margin"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_also_known_as_label"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
             app:layout_constraintTop_toBottomOf="@+id/tv_ingredient_value"
             tools:text="Description" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="112dp" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
